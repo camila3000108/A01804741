@@ -1,0 +1,21 @@
+edad = int(input("cuantos años tienes? "))
+if edad >= 18:
+        print("eres mayor de edad!")
+else:
+        print("eres menor de edad!")
+
+
+
+edad = int(input("cuantos años tienes? "))
+if edad >= 13 and edad <= 19: 
+        print("eres adolescente!")
+else:
+        print("no eres adolescente!")
+
+
+
+
+año_nacimiento = int(input("cual es tu año de nacimiento? "))
+año_actual = 2025
+edad = año_actual - año_nacimiento
+print("tienes", edad, "años!")
