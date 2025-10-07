@@ -1,0 +1,85 @@
+1. 
+temp= [20,30,21,26,27,31,36]
+print( sum(temp))
+
+temp = [20,30,21,26,27,31,36]
+media= sum (temp) / len(temp)
+print (media)
+
+for i in temp:
+    if i > media:
+        print(i, "sobre el promedio")
+    else:
+        print(i, "bajo el promedio")
+
+2. 
+alumnos= ["Maria", "Juan", "Ana", "Luis"]
+calificaciones= [10,5,9,6]
+
+promedio= sum (calificaciones) / len(calificaciones)
+print (promedio)
+
+for i in calificaciones:
+    if i < 7:
+        print(i,"reprobado")
+    else: 
+        print (1, "aprobado")
+
+3. 
+compras = ["leche", "pan", "huevos", "arroz", "frutas"]
+ya_comprado = [False, False, False, False, False]
+
+for i in range(len(compras)):
+    if ya_comprado[i] == False:
+        print(compras[i], "falta comprar")
+        respuesta = input("¿Ya lo compraste? (si/no): ")
+        if respuesta == "si":
+            ya_comprado[i] = True
+
+print("Lista actualizada:")
+for i in range(len(compras)):
+    if ya_comprado[i] == True:
+        print(compras[i], "ya comprado")
+    else:
+        print(compras[i], "falta comprar")
+
+4.
+numeros = [45, 12, 67, 23, 89, 5, 34]
+
+print("El número máximo es:", max(numeros))
+print("El número mínimo es:", min(numeros))
+
+numeros.sort()
+print("Lista en orden:", numeros)
+
+5.
+numeros = [10, 23, 45, 8, 12, 3, 7, 6]
+pares = []
+impares = []
+
+for n in numeros:
+    if n % 2 == 0:
+        pares.append(n)
+    else:
+        impares.append(n)
+
+print("pares:", pares)
+print("impares:", impares)
+
+6.
+usuarios = ["ana", "maria", "juan", "pedro"]
+
+if len(usuarios) != len(set(usuarios)):
+    print("Hay nombres repetidos")
+else:
+    print("No hay nombres repetidos")
+
+nuevo = input("Escribe un nombre de usuario: ")
+
+while nuevo in usuarios:
+    print("Ese nombre ya existe, elige otro.")
+    nuevo = input("Escribe otro nombre: ")
+
+usuarios.append(nuevo)
+
+print("Lista actualizada de usuarios:", usuarios)
